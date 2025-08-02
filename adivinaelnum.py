@@ -11,4 +11,3 @@ if num>num_secreto:
     print(f"El numero secreto es menor")
 elif num<num_secreto:
     print(f"El numero secreto es mayor")
-
