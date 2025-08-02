@@ -10,6 +10,8 @@ elif edad >= 26 and edad <= 74:  # hacer condicion de edad mayor de 18
     print(f"Usted es mayor de edad porque tiene {edad} años")
 elif edad >=18 and edad <= 25:  # imprimir usted es joven adulto si edad es mayor o igual a 18 y edad es menor o igual a 25
     print(f"Usted es joven adulto porque tiene {edad} años")
+elif edad > 90:
+    print(f"Probablemente {edad} esta fuera del rango de edad")
 elif edad<=0:                               #si se ingresa un valor diferente imprimir una validacion
     print(f"Ingrese una edad valida, usted ingreso {edad} años y esa edad no es valida")
 
