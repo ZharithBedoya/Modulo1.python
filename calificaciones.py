@@ -14,7 +14,12 @@ calificaciones=[] #crear una lista vacia para almacenar las calificaciones
 num_notas=int(input("¿Cuantas notas desea ingresar?"))  #se crea la variable num_notas que almacena la cantidad de notas que desea ingresar el usuario
 
 for i in range(num_notas):  #se crea un bucle
-    nota=float(input(f"Ingresa la nota {i+1}: ")) #impresion de mensajes para que ingrese la nota
+    while True:
+        nota=float(input(f"Ingresa la nota {i+1}: ")) #impresion de mensajes para que ingrese la nota
+        if nota <=0: #validar si la nota es menor de 0
+            print("El nota debe ser mayor a 0")
+        else:
+            break # terminar el bucle while si la nota es mayor a 0
     calificaciones.append(nota) #se encarga de agregar a la lista los valores ingresados
 resultado=calificacion(calificaciones)
 print(f"El promedio de la nota ingresada es: {resultado[0]:.2f}, la máxima nota es: {resultado[1]}, la mínima nota es: {resultado[2]}")
